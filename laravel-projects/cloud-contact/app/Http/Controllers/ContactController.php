@@ -18,8 +18,6 @@ class ContactController extends Controller
     
     function contactBookView(){
 
-        // $contacts = DB::table('contacts')->get();
-
         $contacts = Contact::all();
 
         return view('contact_book', compact('contacts'));

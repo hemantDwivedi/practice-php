@@ -13,9 +13,9 @@ Route::post('/signup', [AuthController::class, 'handleSignUp'])->name("signup.po
 // Contact Routes
 Route::get('/', [ContactController::class, 'index']);
 
-Route::get('/contactus', [ContactController::class, 'contactUsView']);
-
 Route::get('/contacts', [ContactController::class, 'contactBookView'])->name('viewContact');
+Route::get('/contactus', [ContactController::class, 'contactUsView'])->name('contactUs');
+
 
 Route::get('/addcontact', [ContactController::class, 'addContactView']);
 

@@ -11,7 +11,7 @@
                     <th class="p-4 w-1/4">Actions</th>
                 </tr>
             </thead>
-            <tbody class="w-full flex flex-col items-center justify-between overflow-y-scroll h-[60vh]">
+            <tbody class="w-full flex flex-col items-center justify-between overflow-y-auto h-[60vh]">
                 @foreach ($contacts as $contacts)
                     <tr class="border-b-2 border-gray-800 hover:bg-zinc-800 text-left w-full flex mb-4">
                         <td scope="row" class="p-4 w-1/4">
